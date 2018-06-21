@@ -1,0 +1,36 @@
+language: node_js
+
+services:
+  - docker
+
+node_js:
+  - "8"
+
+stages:
+  - Linting
+  - test
+
+cache:
+  directories:
+    - node_modules
+
+install: npm install
+
+env:
+  global:
+    - LAUNCHER=Node
+
+jobs:
+  include:
+    - stage: Linting
+      script: 'npm run lint'
+    - stage: test
+      script: 'npm run test'
+    - stage: test
+      node_js: "6"
+      script: 'npm run test'
+    - stage: test
+      node_js: "4"
+      script: 'npm run test'
+
+dist: trusty

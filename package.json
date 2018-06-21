@@ -1,0 +1,42 @@
+{
+  "name": "gitbook-plugin-related-links",
+  "description": "Handles related links for pages",
+  "main": "index.js",
+  "version": "1.0.0",
+  "engines": {
+    "gitbook": "3.*"
+  },
+  "gitbook": {
+    "properties": {
+      "heading": {
+        "type": "string",
+        "default": "### Related links",
+        "title": "The heading to prefix the related links with"
+      }
+    }
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "gitbook-tester": "^1.4.3",
+    "jasmine": "^3.1.0",
+    "jasmine-node": "^1.14.5",
+    "path": "^0.12.7",
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "test": "jasmine-node test/",
+    "lint": "standard"
+  },
+  "keywords": [
+    "gitbook",
+    "related",
+    "related links"
+  ],
+  "author": "Tim McMackin <timothymcmackin@yahoo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.shuttercorp.net/tmcmackin/gitbook-plugin-related-links.git"
+  },
+  "homepage": "https://github.shuttercorp.net/tmcmackin/gitbook-plugin-related-links"
+}
