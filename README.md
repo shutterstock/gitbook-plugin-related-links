@@ -23,7 +23,9 @@ Add the plugin to your `book.json`:
 {
   "plugins": [ "related-links" ],
   "pluginsConfig": {
-     "header": "### Related topics"
+    "related-links": {
+      "header": "### Related topics"
+    }
   }
 }
 ```
