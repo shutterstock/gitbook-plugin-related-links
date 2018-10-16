@@ -21,7 +21,7 @@ Add the plugin to your `book.json`:
 
 ``` json
 {
-  "plugins": [ "related-links@git://github.shuttercorp.net/tmcmackin/gitbook-plugin-related-links.git" ],
+  "plugins": [ "related-links" ],
   "pluginsConfig": {
      "header": "### Related topics"
   }
